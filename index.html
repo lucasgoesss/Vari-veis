@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01 - Javascript</title>
+</head>
+
+<body>
+    <h1>Desafio 01 - Javascript</h1>
+
+    <script>
+        // Solicita ao usuário para inserir dois números
+        let numero1 = Number(prompt("Insira o primeiro número:"));
+        let numero2 = Number(prompt("Insira o segundo número:"));
+
+        // Realiza os cálculos
+        let soma = numero1 + numero2;
+        let subtracao = numero1 - numero2;
+        let multiplicacao = numero1 * numero2;
+        let divisao = numero2 !== 0 ? numero1 / numero2 : "Indefinida (divisão por zero)";
+        let restoDivisao = numero2 !== 0 ? numero1 % numero2 : "Indefinido (divisão por zero)";
+
+        // Verifica se a soma é par
+        let somaPar = soma % 2 === 0 ? "A soma é par" : "A soma é ímpar";
+
+        // Verifica se os números são iguais
+        let numerosIguais = numero1 === numero2 ? "Os números são iguais" : "Os números são diferentes";
+
+
+
+        // Exibe os resultados na tela
+        document.write(`<p>Soma: ${soma}</p>`);
+        document.write(`<p>Subtração: ${subtracao}</p>`);
+        document.write(`<p>Multiplicação: ${multiplicacao}</p>`);
+        document.write(`<p>Divisão: ${divisao}</p>`);
+        document.write(`<p>Resto da Divisão: ${restoDivisao}</p>`);
+        document.write(`<p>${somaPar}</p>`);
+        document.write(`<p>${numerosIguais}</p>`);
+    </script>
+</body>
+
+</html>
